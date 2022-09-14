@@ -1,0 +1,1124 @@
+ <!-- 
+        ul ->000목록 000리스트 3,4개 이상, 네비게이션
+        a -> 그냥 나열
+        img태그는 이미지콘텐츠한테 쓰는게 적당하다.
+        [아이콘,로고 x]
+
+        단독span은 의미가 떨어지는애한테 쓰면됨
+        p태그 문장,단락,제목,내용으로 이루어짐
+     -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <!-- 메인페이지일때 -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="header-area">
+        <div class="logo-area">
+            <div class="inner"> <!-- w잡고 중앙정렬 공통 -->
+                <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
+                <div class="search-area">
+                    <form action="" method="get"><!-- 보안이 노필요get, 필요 post -->
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                            <input type="text">
+                            <button type="button"><!-- 버튼은 항상 가운데 정렬하는 속성 -->
+                                <span class="blind">검색</span> <!-- 제공되는 영역엔 블라인드 필수 -->
+                                <!-- after -->
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="service-area">
+                    <a href="" class="link-start">네이버를 시작페이지로</a><i class="bar"></i>
+                    <a href="" class="link-junior">쥬니어 네이버</a>
+                    <a href="" class="link-bin">쥬니어 네이버</a>
+                </div>
+            </div>
+        </div>
+        <div class="gnb-area"> <!-- w를 100프로로 해야좋겠지 -->
+            <div class="inner">
+                <nav class="gnb-wrap">
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">메일</a></li>
+                        <li class="gnb-item"><a href="">메일</a></li>
+                        <li class="gnb-item"><a href="">메일</a></li>
+                        <li class="gnb-item"><a href="">메일</a></li>
+                        <li class="gnb-item"><a href="">메일</a></li>
+                    </ul>
+                </nav>
+                <div class="weather-area">
+                    날씨영역
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container"><!-- 메인영역 -->
+        <div class="left-area">
+            <div class="ad-top">
+                <a href="" class="link-ad img-bd">
+                    <img src="./assets/images/banner01.jpg" alt="">
+                </a>
+            </div>
+
+            <section class="sc-news">
+                <h2 class="blind">뉴스영역</h2><!-- 보이지 않는 제목 넣어줘야함 -->
+
+                <div class="group-issue">
+                    <div class="issue-area">
+                        <a href="" class="link-media">연합뉴스</a>
+                        <a href="" class="link-issue">[후보등록] 1인당 평균재산 8억5천…男 12%는 병역 못 마쳐</a>
+                    </div>
+                    <div class="direct-area">
+                        <a href="" class="link-home">뉴스홈</a>
+                        <a href="" class="link-direct">연애</a>
+                        <a href="" class="link-direct">스포츠</a>
+                        <a href="" class="link-direct">지방선거</a>
+                    </div>
+                </div>
+                <div class="group-title">
+                    <a href="" class="link-title">뉴스스탠드</a>
+                    <div class="sort-area">
+                        <a href="" class="btn-sort">구독한 언론사</a>
+                        <a href="" class="btn-sort">전체 언론사</a>
+                    </div>
+
+                    <div class="set-area">
+                        <a href="" class="btn-set ic-list" ><span class="blind">리스트형</span></a>
+                        <a href="" class="btn-set ic-thumb" ><span class="blind">썸네일형</span></a>
+                        <a href="" class="btn-set ic-set" ><span class="blind">설정</span></a>
+                    </div>
+                </div>
+
+                <div class="group-list">
+                    <ul class="media-list">
+                        <li class="media-item"><a href=""><img src="./assets/images/news.png" alt=""></a></li>
+                        <li class="media-item"><a href=""><img src="./assets/images/news.png" alt=""></a></li>
+                        <li class="media-item"><a href=""><img src="./assets/images/news.png" alt=""></a></li>
+                        <li class="media-item"><a href=""><img src="./assets/images/news.png" alt=""></a></li>
+                    </ul>
+                    <i class="vt-line vt01"></i><!-- 세로 -->
+                    <i class="vt-line vt02"></i>
+                    <i class="vt-line vt03"></i>
+                    <i class="vt-line vt04"></i>
+                    <i class="vt-line vt05"></i>
+                    <i class="hr-line hr01"></i>
+                    <i class="hr-line hr02"></i>
+                    <i class="hr-line hr03"></i>
+                </div>
+            </section>
+
+            <!-- @레시피부분 코딩진행 !!!!!!!-->
+            <section class="sc-recipe">
+                <h2 class="blind">레시피영역</h2>
+
+                <div class="recipe-title">
+                    <div class="title-area">
+                        <strong class="rt-title">오늘 읽을만한 글</strong>
+                        <span class="rt-txt">주제별로 분류된 다양한 글 모음</span>
+                    </div>
+                    
+                    <div class="info-area">
+                        <span class="info-num">
+                            <span class="bold-num">709</span> 개의 글</span>
+                        <i class="bar"></i> <!-- 왜 인라인블록해야나오지? -->
+                        <a class="my-set">관심주제 설정</a>
+                    </div>
+                </div>
+
+                <div class="main-category">
+                    <a href="" class="mcate-prev">
+                        <i class="ico-btn"><!-- span, div가 아니라 왜 i? -->
+                            <span class="blind">이전</span>
+                        </i>
+                    </a>
+                    <a href="" class="mcate-next">
+                        <i class="ico-btn">
+                            <span class="blind">다음</span>
+                        </i>
+                    </a>
+
+                    <ul class="category-list">
+                        <li class="category-item"><a href="" class="menu-tap">엔터</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">스포츠</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">자동차</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">웹툰</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">경제M</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">추천구독</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">레시피</a></li>
+                        <li class="category-item"><a href="" class="menu-tap">리빙</a></li>
+                    </ul>
+                </div>
+
+                <div class="preview-area">
+                    <div class="pcontent-top">
+                        <div class="content-box">
+                            <a href="" class="video-box img-bd">
+                                <img src="./assets/images/recipe01.jpeg" alt="">
+                                <i class="ico-play">
+                                    <span class="blind">재생</span>
+                                </i>
+                                <span class="run-time">
+                                    <span class="blind">재생시간</span>
+                                    <em class="time">6:45</em>
+                                </span>
+                            </a>
+
+                            <a href="" class="txt-box">
+                                <strong class="citem-title">[푸드클래스] 만개의 레시피</strong>
+                                <strong class="title-txt">시원하게 한 잔! 상큼 달콤한 에이드 레시피 </strong>
+                                <p class="desc">점점 더워지는 날씨에 생각나는 <br>9가지 에이드 만드는 방법</p>
+                                <span class="hash-tag">#홈카페 #에이드음료</span>
+                            </a>
+                        </div>
+                        <div class="content-box">
+                            <a href="" class="video-box img-bd">
+                                <img src="./assets/images/recipe02.jpeg" alt="">
+                                <i class="ico-play">
+                                    <span class="blind">재생</span>
+                                </i>
+                                <span class="run-time">
+                                    <span class="blind">재생시간</span>
+                                    <em class="time">2:00</em>
+                                </span>
+                            </a>
+
+                            <a href="" class="txt-box">
+                                <strong class="citem-title">[오늘의 푸드TV] 두리식탁 Duri's table</strong>
+                                <strong class="title-txt">부추와 어묵의 꿀 조합, 맛깔나는 볶음밥 </strong>
+                                <p class="desc">작게 썬 어묵의 감칠맛과 식감이 포인트<br>매콤하면서도 고소함 가득 담은 레시피</p>
+                                <span class="hash-tag">#한그릇요리 #어묵요리</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pcontent-mid set-line">
+                        <ul class="recipe-list">
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood01.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">남편 도시락반찬도 새벽배송으로~</strong>
+                                        <p class="desc">헤로우- 김돌희예요! 집밥여신이고 싶었던 (구)집밥머신 그러나 직음은 물러설수없는 (현)아가리다이어터!! 날씨가 더워지고 옷차림이 얇아지니 주변분들이 하나둘 징벌과 형벌(aka 다이어트)에 돌입하시더라구요..?</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                김돌희
+                                            </span>
+                                            <span class="date">
+                                                1주일 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood02.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">아이반찬 남편술안주 맞춤 장바구니</strong>
+                                        <p class="desc">아이들에게 늘 신선한 재료로 맛있는 요리를 해주는 집밥을 좋아하고 집밥 요리를 하면서 행복을 찾아가고 있는 소은맘입니다. 아이들을 키우면서 식재료를 구입할 때는 반드시 재료의 상태를 보고 꼼꼼히 고르는 장보기를 한다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                소은맘
+                                            </span>
+                                            <span class="date">
+                                                어제
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood01.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">남편 도시락반찬도 새벽배송으로~</strong>
+                                        <p class="desc">헤로우- 김돌희예요! 집밥여신이고 싶었던 (구)집밥머신 그러나 직음은 물러설수없는 (현)아가리다이어터!! 날씨가 더워지고 옷차림이 얇아지니 주변분들이 하나둘 징벌과 형벌(aka 다이어트)에 돌입하시더라구요..?</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                김돌희
+                                            </span>
+                                            <span class="date">
+                                                1주일 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood02.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">아이반찬 남편술안주 맞춤 장바구니</strong>
+                                        <p class="desc">아이들에게 늘 신선한 재료로 맛있는 요리를 해주는 집밥을 좋아하고 집밥 요리를 하면서 행복을 찾아가고 있는 소은맘입니다. 아이들을 키우면서 식재료를 구입할 때는 반드시 재료의 상태를 보고 꼼꼼히 고르는 장보기를 한다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                소은맘
+                                            </span>
+                                            <span class="date">
+                                                어제
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pcontent-mid2">
+                        <div class="mid-wrap set-line">
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/media01.jpg" alt="">
+                                    <i class="ico-play">
+                                        <span class="blind">재생</span>
+                                    </i>
+                                    <span class="run-time">
+                                        <span class="blind">재생시간</span>
+                                        <em class="time">05:03</em>
+                                    </span>
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        매실청 담글때 씨앗 빼야할까요?</strong>
+                                        <div class="source">
+                                            <span class="name">
+                                                백년밥상TV
+                                            </span>
+                                            <span class="date">
+                                                1년 전
+                                            </span>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/media02.jpg" alt="">
+                                    <i class="ico-play">
+                                        <span class="blind">재생</span>
+                                    </i>
+                                    <span class="run-time">
+                                        <span class="blind">재생시간</span>
+                                        <em class="time">02:22</em>
+                                    </span>
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        2색 2식감의 오이 & 에그 마요 샌드위치</strong>
+                                        <div class="source">
+                                            <span class="name">
+                                                두리식탁 Duri's table
+                                            </span>
+                                            <span class="date">
+                                                1주일 전
+                                            </span>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/media03.jpg" alt="">
+                                    <i class="ico-play">
+                                        <span class="blind">재생</span>
+                                    </i>
+                                    <span class="run-time">
+                                        <span class="blind">재생시간</span>
+                                        <em class="time">02:00</em>
+                                    </span>
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        부추와 어묵의 꿀 조합, 맛깔나는 볶음밥</strong>
+                                        <div class="source">
+                                            <span class="name">
+                                                두리식탁 Duri's table
+                                            </span>
+                                            <span class="date">
+                                                2주일 전
+                                            </span>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pcontent-mid set-line">
+                        <ul class="recipe-list">
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood03.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">고등어 굽는법 비린내 제거 생선구이 요리로 오트밀 먹는법</strong>
+                                        <p class="desc">고등어 굽는법 비린내 제거 생선구이 요리로 오트밀 먹는법 얼마 전 돈까스 오트밀 튀김옷으로 매우 드라마틱한 맛을 경험했다 소개 드렸는데요. 고등어 비린내 제거 및 생선구이 맛 내는데도 좋을 것 같아 밀가루 대신 사용해 보았습니다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                미소순이
+                                            </span>
+                                            <span class="date">
+                                                1개월 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood04.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">콜라부터 맥주까지 제로 칼로리 열풍</strong>
+                                        <p class="desc">살 안 찌는 거 맞나요? 맛과 칼로리가 비례한다는 말은 이제 옛말이 돼 버렸다. ‘제로’를 내세운 신제품 소식이 끊임없이 이어지고 있다. 이제 콜라뿐 아니라 다양한 탄산음료와 맥주, 젤리 등으로 그 영역이 넓어지고 있는데, ‘제로’라고 해서 제로 칼로리 소식만 있는 게 아니다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                드링킷
+                                            </span>
+                                            <span class="date">
+                                                2일 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood03.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">고등어 굽는법 비린내 제거 생선구이 요리로 오트밀 먹는법</strong>
+                                        <p class="desc">고등어 굽는법 비린내 제거 생선구이 요리로 오트밀 먹는법 얼마 전 돈까스 오트밀 튀김옷으로 매우 드라마틱한 맛을 경험했다 소개 드렸는데요. 고등어 비린내 제거 및 생선구이 맛 내는데도 좋을 것 같아 밀가루 대신 사용해 보았습니다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                미소순이
+                                            </span>
+                                            <span class="date">
+                                                1개월 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="recipe-item">
+                                <a href="">
+                                    <img src="./assets/images/infood04.jpg" alt="">
+
+                                    <div class="rec-box">
+                                        <em class="citem-title">레시피</em>
+                                        <strong class="title-txt">콜라부터 맥주까지 제로 칼로리 열풍</strong>
+                                        <p class="desc">살 안 찌는 거 맞나요? 맛과 칼로리가 비례한다는 말은 이제 옛말이 돼 버렸다. ‘제로’를 내세운 신제품 소식이 끊임없이 이어지고 있다. 이제 콜라뿐 아니라 다양한 탄산음료와 맥주, 젤리 등으로 그 영역이 넓어지고 있는데, ‘제로’라고 해서 제로 칼로리 소식만 있는 게 아니다.</p>
+                                        <div class="source">
+                                            <span class="name">
+                                                드링킷
+                                            </span>
+                                            <span class="date">
+                                                2일 전
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="funding-area">
+                        <div class="Ftitle-area">
+                            <strong class="rt-title">마음까지 채우는 클릭</strong>
+                        </div>
+
+                        <div class="funding-wrap">
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/fun01.jpg" alt="">
+                                    <i class="today-funding">
+                                        <span class="blind">펀딩</span>
+                                        <span class="funding-txt">펀딩</span>
+                                    </i>
+                                    
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        카카오와 헤이즐넛이 듬뿍 들어간 초코 스프레드</strong>
+                                    <div class="source">
+                                        <span class="name">
+                                            바다마을우정국
+                                        </span>
+                                        <span class="date">
+                                            <span class="percent">643%</span>
+                                            달성
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/fun02.jpg" alt="">
+                                    <i class="today-funding">
+                                        <span class="blind">펀딩</span>
+                                    </i>
+                                    <span class="funding-txt">펀딩</span>
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        카카오와 헤이즐넛이 듬뿍 들어간 초코 스프레드</strong>
+                                    <div class="source">
+                                        <span class="name">
+                                            바다마을우정국
+                                        </span>
+                                        <span class="date">
+                                            <span class="percent">643%</span>
+                                            달성
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mid-box">
+                                <a href="" class="video-box img-bd">
+                                    <img src="./assets/images/fun03.jpg" alt="">
+                                    <i class="today-funding">
+                                        <span class="blind">펀딩</span>
+                                    </i>
+                                    <span class="funding-txt">펀딩</span>
+                                </a>
+    
+                                <a href="" class="mtxt-box">
+                                    <strong class="title-txt">
+                                        카카오와 헤이즐넛이 듬뿍 들어간 초코 스프레드</strong>
+                                    <div class="source">
+                                        <span class="name">
+                                            바다마을우정국
+                                        </span>
+                                        <span class="date">
+                                            <span class="percent">643%</span>
+                                            달성
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="more-btnarea">
+                    <button class="more-btn">새로운 글 더보기</button>
+                </div>
+            </section>
+            
+
+
+        </div><!-- //left-area -->
+
+
+
+
+
+
+        <div class="right-area">
+            <section class="sc-login">
+                <h2 class="blind">로그인</h2>
+                <p class="login-msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+                <a href="" class="link-login"><span class="blind">네이버</span>로그인</a>
+                <div class="sub-area">
+                    <a href="" class="link-id">아이디</a>
+                    <a href="" class="link-find">비밀번호 찾기</a>
+                    <a href="" class="link-join">회원가입</a>
+                </div>
+
+            </section>
+
+
+            <section class="sc-cardnews">
+                <h2 class="blind"><!-- 배너 --> 환율 및 주요이슈</h2>
+                <a href="" class="link-news">
+                    <em class="badge">잇슈</em> <!-- 단어강조, 스트롱은 내용과 제목있을때 강조 -->
+                    <span class="news">코로나바이러스 19 현황</span>
+                </a>
+                <div class="navi">
+                    <a href="" class="btn prev"><span class="blind">이전</span></a>
+                    <a href="" class="btn next"><span class="blind">다음</span></a>
+                </div>
+            </section>
+
+
+            <div class="ad-right">
+                <a href="" class="link-ad img-bd">
+                    <img src="./assets/images/banner02.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- @상품영역 -->
+            <section class="sc-shop">
+                <div class="shop-header">
+                    <h2 class="blind">트렌드 쇼핑</h2>
+
+                    <a href="">
+                        <div class="title">트렌드 쇼핑</div>
+                    </a>
+                    <ul class="shop-list">
+                        <li class="shop-title">
+                            <a href="">상품</a>
+                        </li>
+                        <li class="shop-title">
+                            <a href="">쇼핑몰</a>
+                        </li>
+                        <li class="shop-title">
+                            <a href="">MEN</a>
+                        </li>
+                        <li class="shop-title">
+                            <a href="">원쁠딜</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="shop-body">
+                    <div class="shopping-mall">
+                        <h2 class="blind">쇼핑몰 바로가기 목록</h2>
+
+                        <div class="mall-area">
+                            <a href="" class="mall-name">
+                                쿠팡
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                G마켓
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                옥션
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                11번가
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                티몬
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                올리브영
+                            </a>
+                            
+                        </div>
+                        <div class="mall-area">
+                            <a href="" class="mall-name">
+                                위메프
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                SSG닷컴
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                GS샵
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                롯데i몰
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                CJ온스타일
+                            </a>
+                            <a href="" class="mall-name">
+                                <span class="dot"></span>
+                                패션플러스
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="recommend-area">
+                        <div class="shop-control ">
+                            <span class="num-box">
+                                1 / 18
+                            </span>
+
+                            <div class="btn-box">
+                                <a href="" class="btn prev">
+                                    <span class="blind">이전</span>
+                                </a>
+                                <a href="" class="btn next">
+                                    <span class="blind">다음</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <ul class="reco-list">
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad01.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">교동짜장 92%할인</span>
+                                        <span class="title">1인분 500원!</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad02.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">아이패치로 관리</span>
+                                        <span class="title">눈가에 반짝</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad03.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">최대78%역대급!</span>
+                                        <span class="title">젝시믹스7주년</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad01.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">교동짜장 92%할인</span>
+                                        <span class="title">1인분 500원!</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad02.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">아이패치로 관리</span>
+                                        <span class="title">눈가에 반짝</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad03.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">최대78%역대급!</span>
+                                        <span class="title">젝시믹스7주년</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad01.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">교동짜장 92%할인</span>
+                                        <span class="title">1인분 500원!</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad02.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">아이패치로 관리</span>
+                                        <span class="title">눈가에 반짝</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad03.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">최대78%역대급!</span>
+                                        <span class="title">젝시믹스7주년</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad01.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">교동짜장 92%할인</span>
+                                        <span class="title">1인분 500원!</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad02.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">아이패치로 관리</span>
+                                        <span class="title">눈가에 반짝</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="roco-item">
+                                <a href="">
+                                    <img src="./assets/images/inad03.jpg" alt="">
+
+                                    <p class="roco-titlebox">
+                                        <span class="title">최대78%역대급!</span>
+                                        <span class="title">젝시믹스7주년</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="shop_page">
+                            <div class="btn-box">
+                                <a href="" class="btn prev">
+                                    <span class="blind">이전</span>
+                                </a>
+                                <span class="num-box">
+                                    1 / 18
+                                </span>
+                                <a href="" class="btn next">
+                                    <span class="blind">다음</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-news">
+                        <h2 class="blind">쇼핑뉴스</h2>
+
+                        <div class="news-top">
+                            <strong class="news-title">반갑다! 쇼핑뉴스</strong>
+
+                            <div class="shop-control news-cb">
+                                <span class="num-box">
+                                    1 / 18
+                                </span>
+    
+                                <div class="btn-box">
+                                    <a href="" class="btn prev">
+                                        <span class="blind">이전</span>
+                                    </a>
+                                    <a href="" class="btn next">
+                                        <span class="blind">다음</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="new-detail">
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                            <li class="new-box">
+                                <a href="">
+                                    <em class="title">유니프랜드</em>
+                                    <p class="dec">타임특가 4,900원 실속구매1+1+1</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shopmore">
+                        <div class="shop-category">
+                            <a href="" class="cate">패션</a>
+                            <a href="" class="cate">라이프</a>
+                            <a href="" class="cate">뷰티</a>
+                            <a href="" class="cate">디지털·레저</a>
+                        </div>
+                        <div class="shop-control news-cb"><!-- 여기서부터 밑shop-control들이 꼬였는데 못풀겠음... -->
+                            <span class="num-box">
+                                1 / 18
+                            </span>
+
+                            <div class="btn-box">
+                                <a href="" class="btn prev">
+                                    <span class="blind">이전</span>
+                                </a>
+                                <a href="" class="btn next">
+                                    <span class="blind">다음</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shopmore-wrap">
+                            <ul class="shopmore-item">
+                                <li class="shopmore-goods">
+                                    <a href="" class="shopmore-thumbwrap">
+                                        <div class="shopmore-thumb img-bd">
+                                            <img src="./assets/images/rad01.jpg" alt="" class="shopmore-img">
+                                        </div>
+                                        <div href="" class="goods-title"><strong class="title">시원하고 쾌적한 조거팬츠</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="shopmore-goods">
+                                    <a href="" class="shopmore-thumbwrap">
+                                        <div class="shopmore-thumb img-bd">
+                                            <img src="./assets/images/rad01.jpg" alt="" class="shopmore-img">
+                                        </div>
+                                        <div href="" class="goods-title"><strong class="title">특별한그녀사랑스런 패션</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop-deal">
+                        <div class="shopdeal-title">
+                            <strong class="title">
+                                <a href="" class="deal-link">
+                                    <span class="blind">원쁠딜</span>
+                                    <span>원쁠딜 전 상품 무료배송!</span> 
+                                </a>
+                            </strong>
+
+                            <div class="shop-control news-cb">
+                                <span class="num-box">
+                                    1 / 18
+                                </span>
+    
+                                <div class="btn-box">
+                                    <a href="" class="btn prev">
+                                        <span class="blind">이전</span>
+                                    </a>
+                                    <a href="" class="btn next">
+                                        <span class="blind">다음</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="plusdeal-item">
+                            <li class="plusdeal-goods">
+                                <a href="" class="plusdeal-wrap">
+                                    <div class="plusdeal-box">
+                                        <img src="./assets/images/miniad.jpg" alt="" class="Lpimg">
+                                        <i class="ico_one_plus"></i>
+                                    </div>
+                                    <div class="plusdeal-box plus-R">
+                                        <img src="./assets/images/miniad02.jpg" alt="" class="Rpimg">
+                                    </div>
+                                    
+                                    <div class="plusdeal-dsc">
+                                        <p class="title">트라몬티나 우드 커트러리 홈카페 캠핑 티스푼 1개+1개 외</p>
+                                        <em class="discount">78%</em>
+                                        <strong class="price">5,500원</strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="plusdeal-goods">
+                                <a href="" class="plusdeal-wrap">
+                                    <div class="plusdeal-box">
+                                        <img src="./assets/images/miniad.jpg" alt="" class="Lpimg">
+                                        <i class="ico_one_plus"></i>
+                                    </div>
+                                    <div class="plusdeal-box plus-R">
+                                        <img src="./assets/images/miniad02.jpg" alt="" class="Rpimg">
+                                    </div>
+                                    
+                                    <div class="plusdeal-dsc">
+                                        <p class="title">트라몬티나 우드 커트러리 홈카페 캠핑 티스푼 1개+1개 외</p>
+                                        <em class="discount">78%</em>
+                                        <strong class="price">5,500원</strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="plusdeal-goods">
+                                <a href="" class="plusdeal-wrap">
+                                    <div class="plusdeal-box">
+                                        <img src="./assets/images/miniad.jpg" alt="" class="Lpimg">
+                                        <i class="ico_one_plus"></i>
+                                    </div>
+                                    <div class="plusdeal-box plus-R">
+                                        <img src="./assets/images/miniad02.jpg" alt="" class="Rpimg">
+                                    </div>
+                                    
+                                    <div class="plusdeal-dsc">
+                                        <p class="title">트라몬티나 우드 커트러리 홈카페 캠핑 티스푼 1개+1개 외</p>
+                                        <em class="discount">78%</em>
+                                        <strong class="price">5,500원</strong>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div><!-- //right-area -->
+        <!-- after가 여기로 얇게 들어감 -->
+    </main>
+    <footer class="footer-area">
+        <div class="footer-inner inner">
+            <div class="footer-banner">
+                <ul class="banner-list">
+                    <li class="banner-item">
+                        <a href="">
+                            <img src="./assets/images/footer01.jpg" alt="" class="footer-img img-bd">
+                            <div class="banner-txt">
+                                <em class="binner-title">복지부X아동권리보장원</em>
+                                <strong class="sub-title">가정위탁의 날</strong>
+                                <div class="dec">
+                                    <p>365일 동참하기</p>
+                                    <p>함께 키우는 가정위탁</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="banner-item">
+                        <a href="">
+                            <img src="./assets/images/footer02.jpg" alt="" class="footer-img img-bd">
+                            <div class="banner-txt">
+                                <em class="binner-title">네이버 해피빈 가볼까</em>
+                                <strong class="sub-title">즐거운 가정의 달</strong>
+                                <div class="dec">
+                                    <p>5손도손!</p>
+                                    <p>특별한 추억을 선물해요!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="banner-item">
+                        <a href="">
+                            <img src="./assets/images/footer01.jpg" alt="" class="footer-img img-bd">
+                            <div class="banner-txt">
+                                <em class="binner-title">복지부X아동권리보장원</em>
+                                <strong class="sub-title">가정위탁의 날</strong>
+                                <div class="dec">
+                                    <p>365일 동참하기</p>
+                                    <p>함께 키우는 가정위탁</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="notice-area">
+                <a href="">
+                    <em class="notice">공지사항</em>
+                </a>
+                <a href="">
+                    <em class="service">서비스 전체보기</em>
+                </a>
+            </div>
+
+            <div class="aside-area">
+                <div class="aside-left">
+                    <div class="aside-list">
+                        <h3 class="title">Creators</h3>
+                        <a href=""class="aside-link">크리에이터</a>
+                        <a href=""class="aside-link">스몰비즈니스</a>
+                    </div>
+                    <div class="aside-list">
+                        <h3 class="title">PartnersSME</h3>
+                        <a href=""class="aside-link">SME 풀케어 시스템</a>
+                        <a href=""class="aside-link">비즈니스 · 광고</a>
+                        <a href=""class="aside-link">스토어 개설</a>
+                        <a href=""class="aside-link">지역업체 등록</a>
+                        <a href=""class="aside-link">엑스퍼트 등록</a>
+                    </div>
+                    <div class="aside-list">
+                        <h3 class="title">Developers</h3>
+                        <a href=""class="aside-link">네이버 개발자 센터오픈</a>
+                        <a href=""class="aside-link">PIA</a>
+                        <a href=""class="aside-link">오픈소스</a>
+                        <a href=""class="aside-link">네이버 D2</a>
+                        <a href=""class="aside-link">네이버 D2SF</a>
+                        <a href=""class="aside-link">네이버 랩스</a>
+                    </div>
+                </div>
+
+                <div class="aside-right">
+                    <div class="aside-rlist">
+                        <a href="">
+                            <div class="aside-info">
+                                <em>웨일 브라우저</em>
+                                <p>다운받기</p>
+                            </div>
+
+                            <img src="./assets/images/whale.png" alt="">
+                        </a>
+                    </div>
+                    <div class="aside-rlist">
+                        <a href="">
+                            <div class="aside-info">
+                                <em>프로젝트 꽃</em>
+                                <p>바로가기</p>
+                            </div>
+
+                            <img src="./assets/images/flower.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="corp-area">
+                <a href="" class="corp-item">회사소개</a>
+                <a href="" class="corp-item">인재채용</a>
+                <a href="" class="corp-item">제휴제안</a>
+                <a href="" class="corp-item">이용약관</a>
+                <a href="" class="corp-item">개인정보처리방침</a>
+                <a href="" class="corp-item">청소년보호정책</a>
+                <a href="" class="corp-item">네이버 정책</a>
+                <a href="" class="corp-item">고객센터</a>
+                <a href="" class="corp-item address">© NAVER Corp.</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

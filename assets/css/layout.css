@@ -1,0 +1,340 @@
+@import './reset.css';
+@import './common.css';
+/* 다른애들 딸려와라 */
+
+/* 헤더+푸터 놓는곳 모든 사이트에서 적용됨 */
+
+.header-area .logo-area{
+    border-bottom: 1px solid #e4e8eb;
+}
+.header-area .logo-area .inner{
+    position: relative;
+    height: 160px;
+}
+.header-area .logo{
+    width: 222px;
+    height: 52px;
+    background-position: 0 -158px;
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header-area .logo a{
+    display: block;
+    height: 100%;
+}
+
+.header-area .search-area{
+    /* position: relative; */
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 50%;
+    left: 238px;
+    margin-top: -28px;
+}
+
+.header-area .search-area input{
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0; /* 체크할때 나오는 선 없애는거 */
+}
+
+.header-area .search-area button{
+    width: 56px;
+    height: 56px;
+    background: #19ce60;
+
+    position: absolute;
+    top: -2px; right: 0;
+    cursor: pointer;
+}
+.header-area .search-area button::after{
+    content: '';
+    display: inline-block;
+    width: 22px;height: 22px;
+    background-position: -420px 0;
+    vertical-align: top;
+}
+
+.header-area .service-area{
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.header-area .service-area a{float: left;}
+.header-area .service-area a.link-start:after{
+    content: '';
+    display: inline-block;
+    width: 26px;height: 26px;
+    /* background: #f00; */
+    vertical-align: top;
+    margin: -3px 0 0 3px;
+    background-position: -308px -345px;
+}
+.header-area .service-area .bar{
+    float: left;
+    width: 1px;height: 10px;
+    background: #ccc;
+    margin: 3px 7px;
+}
+
+/* //////// */
+
+.header-area .gnb-area{
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.header-area .gnb-area .inner::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.header-area .gnb-area .gnb-wrap{
+    float: left;
+}
+.header-area .gnb-list{
+    padding: 11px 0;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.header-area .gnb-list::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.header-area .gnb-item{
+    float: left;
+    color: #19ce60;
+}
+.header-area .gnb-item+.gnb-item{
+    margin-left: 12px;
+}
+
+.header-area .gnb-area .weather-area{
+    float: right;
+}
+
+
+
+
+
+
+.container{
+    width: 1130px; margin: 0 auto;
+    padding: 20px 30px;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+/* ////////////footer/////////////// */
+.footer-area{
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+}
+/* 큰틀을 구성하는 영역이라면 overflow보단 :after 처리하는게 이득 */
+.footer-area:after{
+    /* 가상의 요소 */
+    content: ''; /* display: inline; */
+    display: block;
+    clear: both;
+}
+.footer-area .footer-inner{
+    padding: 0 30px 92px;
+}
+.footer-area .footer-banner .banner-list{
+    overflow: hidden;
+    padding: 24px 0;
+    border-bottom: 1px solid #e4e8eb;
+}
+.footer-banner .banner-item{
+    float: left;
+    width: 350px;
+    height: 86px;
+}
+.footer-banner .banner-item a{
+    display: block;
+    overflow: hidden;
+}
+.footer-banner .footer-img{
+    float: left;
+    width: 160px;
+    height: 86px;
+}
+.footer-banner .banner-txt{
+    /* float: right; */ /* 얘도 왜 플롯이 안먹는지 */
+    overflow: hidden;
+    height: 86px;
+    padding: 2px 2px 0 16px;
+    font-size: 12px;
+    line-height: 1.25;
+    box-sizing: border-box;
+    text-align: left;
+}
+.footer-banner .banner-txt .binner-title{
+    display: block;
+    overflow: hidden;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #58c464;
+    white-space: nowrap;
+}
+.footer-banner .banner-txt .sub-title{
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.26px;
+    color: #242424;
+    white-space: nowrap;
+}
+.footer-banner .banner-txt .dec{
+    overflow: hidden;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: #424242;
+    white-space: nowrap;
+    margin-top: 8px;
+}
+
+.footer-inner .notice-area{
+    padding: 16px 0 15px;
+    border-bottom: 1px solid #e4e8eb;
+    overflow: hidden;
+}
+.footer-inner .notice-area a{
+    display: block;
+}
+.footer-inner .notice-area .notice{
+    float: left;
+    font-weight: bold;
+}
+.footer-inner .notice-area .service{
+    float: right;
+    font-weight: bold;
+}
+.footer-inner .notice-area .service::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: -444px -268px;
+    margin-left: 10px;
+    vertical-align: -2px;
+}
+
+.footer-inner .aside-area{
+    overflow: hidden;
+    border-bottom: 1px solid #e4e8eb;
+}
+.footer-inner .aside-area .aside-left{
+    float: left;
+    width: 780px;
+    padding: 20px 0;
+}
+.footer-inner .aside-area .aside-list{
+    overflow: hidden;
+}
+.footer-inner .aside-area .aside-list+.aside-list{
+    margin-top: 10px;
+}
+.footer-inner .aside-area .title{
+    float: left;
+    width: 87px;
+    font-weight: bold;
+}
+.footer-inner .aside-area .aside-link{
+    float: left;
+    color: #777;
+}
+.footer-inner .aside-area .aside-link+.aside-link::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+    margin: 0 8px;
+}
+
+.footer-inner .aside-right{
+    overflow: hidden;
+    float: right;
+    width: 350px;
+    padding: 28px 0;
+}
+.footer-inner .aside-right .aside-rlist{
+    overflow: hidden;
+    float: left;
+    max-width: 150px;
+}
+.footer-inner .aside-right .aside-rlist a{
+    display: block;
+    overflow: hidden;
+}
+.footer-inner .aside-right .aside-info{
+    float: left;
+}
+.footer-inner .aside-right .aside-info em{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding-top: 2px;
+}
+.footer-inner .aside-right .aside-info p{
+    color: grey;
+}
+.footer-inner .aside-right .aside-rlist img{
+    float: right;
+    margin-left: 12px;
+    width: 48px;
+    height: 48px;
+}
+.footer-inner .aside-right .aside-rlist:last-child{
+    margin-left: 50px;
+}
+
+.footer-inner .corp-area{
+    padding-top: 25px;
+    color: #777;
+    overflow: hidden;
+}
+.footer-inner .corp-area .corp-item{
+    float: left;
+}
+.footer-inner .corp-area .corp-item+.corp-item::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+}
+.footer-inner .corp-area .address{
+    color: #202020;
+    font-weight: bold;
+}

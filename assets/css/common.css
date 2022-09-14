@@ -1,0 +1,73 @@
+/* 공통으로 사용가능한 소스를 씁니다. */
+/* 컨트롤 씨프트 c 개발자모드 선택 바로, 옆에 점점점 누르면 똑 띄어낼수잇음 */
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    min-width: 1190px;
+    /* 반응형pc */
+}
+
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.inner{
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.img-bd{
+    display: block;
+    position: relative;
+}
+.img-bd::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+    background-color: #000;
+}
+
+
+/* 공공으로 사용하는곳 식자제마트 요리는 각자 집에서, 사용할 애들은 추가로 넣어줘야함 */
+
+.header-area .logo,
+.header-area .search-area button::after,
+.header-area .service-area a.link-start:after,
+.sc-news .group-title .set-area .btn-set::after,
+.sc-cardnews .navi .btn::after,
+.sc-recipe .info-area .my-set::before,
+.sc-recipe .mcate-prev .ico-btn,
+.sc-recipe .mcate-next .ico-btn,
+.sc-recipe .preview-area .ico-play,
+.funding-area .Ftitle-area .rt-title::after,
+.more-btnarea .more-btn::before,
+.footer-inner .notice-area .service::after{
+    background-image: url(../images/sp_main_dba1af.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+    /* 원본사이즈가 2배 크니까 2배 줄여준거 */
+}
+
+.sc-shop .shop-header .title::before,
+.sc-shop .shop-header .title::after,
+.shop-body .recommend-area .btn::before,
+.shop-body .recommend-area .next::before,
+.shop-body .news-top .btn::before,
+.shop-body .news-top .next::before,
+.shop-deal .shopdeal-title .deal-link::before,
+.plusdeal-item .plusdeal-box .ico_one_plus,
+.plusdeal-item .plus-R::before
+{
+    background-image: url(../images/sp_shop_a620bd.png);
+    background-repeat: no-repeat;
+    background-size: 107px 101px;
+}

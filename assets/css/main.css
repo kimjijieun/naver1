@@ -1,0 +1,1078 @@
+/* 진짜 메인페이지만! main태그안에있는 애들 전체다 [메인페이지] */
+
+.ad-top img,
+.ad-right img{
+    width: 100%;
+}
+
+/* .imb-bd a{
+    display: block;
+    position: relative;
+}
+.imb-bd a::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+} */
+.left-area{
+    width: 750px;
+    float: left;
+}
+
+.sc-news{
+    margin-top: 12px;
+}
+.sc-news .group-issue{
+    position: relative;
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 13px;
+}
+.sc-news .group-issue .link-media{
+    float: left;
+    font-weight: bold;
+}
+.sc-news .group-issue .link-issue{
+    float: left;
+}
+
+
+.sc-news .group-issue .issue-area{
+    float: left;
+}   
+.sc-news .group-issue .direct-area{
+    float: right;
+    font-weight: bold;
+}
+.sc-news .group-issue .direct-area .link-home{
+   float: left;
+   color: #3565c9;
+}
+.sc-news .group-issue .direct-area .link-home::after{
+    content: '';
+    display: inline-block;
+    width: 3px;height: 3px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-left: 7px;
+    /* vertical-align: middle; */
+    vertical-align: 3px;
+ }
+.sc-news .group-issue .direct-area .link-direct{
+   float: left;
+   margin: 0 4px 0 7px;
+}
+
+/* /////////////////////// */
+.sc-news .group-title{
+    padding: 22px 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.sc-news .group-title .link-title{float: left;}
+.sc-news .group-title .sort-area{float: left;}
+
+.sc-news .group-title .set-area{float: right;}
+.sc-news .group-title .set-area .btn-set{float: left; padding: 0 9px;}
+.sc-news .group-title .set-area .btn-set::after{
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;height: 15px;
+    background-position: 0 -419px;
+}
+
+
+.sc-news .group-title .set-area .ic-list::after {
+    background-position: -206px -389px;
+}
+.sc-news .group-title .set-area .ic-thumb::after {
+    background-position: -444px -34px;
+    width: 13px;
+}
+
+.sc-news .group-title .set-area .ic-set::after{
+    width: 15px;
+    height: 15px;
+    background-position: 0 -419px;
+}
+
+.sc-news .group-list{
+    position: relative;
+    height: 260px;
+    border: 1px solid #dae1e6;
+    /* border-width: 0 1px; */
+}
+
+.sc-news .group-list .media-list{}
+.sc-news .group-list .media-item{
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+}
+.sc-news .group-list .media-item a{
+    display: block;
+    padding: 23px 0 22px;
+}
+.sc-news .group-list .media-item img{height: 20px;}
+
+.sc-news .group-list .vt-line{
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #dae1e6;
+}
+.sc-news .group-list .vt-line.vt01{left: 124px;}
+.sc-news .group-list .vt-line.vt02{left: 248px;}
+.sc-news .group-list .vt-line.vt03{left: 372px;}
+.sc-news .group-list .vt-line.vt04{left: 497px;}
+.sc-news .group-list .vt-line.vt05{left: 622px;}
+
+.sc-news .group-list .hr-line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #dae1e6;
+}
+
+.sc-news .group-list .hr-line.hr01{top: 65px;}
+.sc-news .group-list .hr-line.hr02{top: 130px;}
+.sc-news .group-list .hr-line.hr03{top: 196px;}
+
+
+/* @@@@@레시피 영역@@@@@@ */
+
+.sc-recipe{
+    padding: 35px 0 27px;
+    letter-spacing: -.25px;
+}
+.sc-recipe .recipe-title{
+    overflow: hidden;
+    padding-bottom: 17px;
+}
+.sc-recipe .title-area{
+    float: left;
+}
+.sc-recipe .title-area .rt-title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.sc-recipe .title-area .rt-txt{
+    margin-left: 8px;
+    color: grey;
+}
+
+
+.sc-recipe .info-area{
+    float: right;
+}
+.sc-recipe .info-num{
+    color: grey;
+}
+.sc-recipe .info-num .bold-num{
+    color: #000;
+    font-weight: bold;
+}
+
+.sc-recipe .info-area .bar{
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 0px 7px;
+    display: inline-block;
+}
+
+
+.sc-recipe .info-num .my-set{
+    position: relative;
+    color: #505050;
+    margin-left: 14px;
+}
+.sc-recipe .info-area .my-set::before{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-position: -444px -168px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-right: 4px;
+    vertical-align: -1px;
+    opacity: .7;
+}
+
+
+.sc-recipe .main-category{
+    position: relative;
+    background-color: #fff;
+}
+.sc-recipe .mcate-prev{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */ /* transform left값을 안줬는데 -50%가 먹은 이유는? */
+    transform: translate(-50%, -50%);/* 여긴 왜 -50%여야 되는건지 */
+    z-index: 9;
+}
+.sc-recipe .mcate-prev .ico-btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-position: -128px -345px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.sc-recipe .mcate-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);/* 여긴 왜 50%여야 되는건지 */
+    z-index: 9;
+}
+.sc-recipe .mcate-next .ico-btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-position: -86px -345px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+
+.sc-recipe .category-list{
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sc-recipe .category-list::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    border: 1px solid #dae1e6;
+}
+.sc-recipe .category-item{
+    position: relative;
+    display: inline-block;
+    width: 94px;
+    z-index: 1;
+    vertical-align: top;
+}
+.sc-recipe .category-item .menu-tap{
+    display: block;
+    border-right: 1px solid #dae1e6;
+    font-size: 13px;
+    line-height: 49px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.sc-recipe .category_item:nth-child(8n+1){
+    /* width: 92px; */ /* 8n+1이 8의 배수에 1을 더한다는뜻? 왜 98px을 주는건지 */
+}
+.sc-recipe .category-item:nth-child(7){
+    background-color: #ebaa00;
+    color: #fff;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+}
+
+
+.sc-recipe .preview-area{
+    padding-top: 4px;
+}
+.sc-recipe .preview-area .pcontent-top{
+    padding: 18px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #e4e8eb;
+}
+.sc-recipe .preview-area .content-box{
+    float: left;
+    width: 364px;
+}
+.sc-recipe .preview-area .content-box:last-child{
+    float: right;
+}
+.sc-recipe .preview-area .video-box{
+    /* overflow: hidden; */
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.sc-recipe .preview-area img{ /* 왜 이미지를 바로 안쓰고 부모로 감싸는지 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-recipe .preview-area .ico-play{
+    position: absolute;
+    bottom: 9px;
+    left: 12px;
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-position: 0 -389px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.sc-recipe .preview-area .run-time{
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+
+    opacity: 0.7;
+    background-color: #000;
+    /* -webkit-border-radius: 2px; 왜써주는건지?*/
+    border-radius: 2px;
+}
+.sc-recipe .preview-area .txt-box{
+    display: block;
+    padding: 16px 18px 0 0;
+}
+.sc-recipe .preview-area .citem-title{
+    display: block;
+    font-weight: 700;
+    color: #ebaa00;
+    margin-bottom: 6px;
+}
+.sc-recipe .preview-area .title-txt{ /* strong인데 왜 볼드가 안먹었을까 */
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.sc-recipe .preview-area .desc{
+    line-height: 21px;
+    margin-top: 5px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #404040;
+}
+.sc-recipe .preview-area .hash-tag{
+    display: inline-block;
+    margin-top: 4px;
+    vertical-align: top;/* 인라인블록이여서 탑을 준건지 */
+}
+
+.sc-recipe .pcontent-mid{
+    padding: 18px 0;
+}
+.pcontent-mid .recipe-list{
+    overflow: hidden;
+}
+.pcontent-mid .recipe-list li+li{
+    margin-top: 18px;
+}
+.pcontent-mid .recipe-item{
+    float: left;
+}
+.pcontent-mid .recipe-item a{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    
+}
+.pcontent-mid .recipe-item img{
+    float: left;
+    width: 170px;
+    height: 114px;
+    margin-right: 21px;
+    display: block;
+}
+.pcontent-mid .recipe-item .rec-box{
+    /* float: right; */ /* 플룻을 주면 오른쪽이 아니라 밑으로 떨어지는 이유는? */
+    padding: 4px 47px 0 0;
+}
+.preview-area .source{
+    display: inline-block;
+    margin-top: 2px;
+    line-height: 20px;
+    vertical-align: top;
+}
+.preview-area .source .name{
+    /* overflow: hidden;
+    display: block; */
+    color: #505050;
+}
+.preview-area .source .date{
+    /* float: right; */
+    color: grey;
+}
+.preview-area .source .date::before{
+    background-color: grey;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    content: '';
+    margin: 0 5px 0 6px;
+    vertical-align: 3px;
+}
+
+.set-line{
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.pcontent-mid2{
+    padding-top: 18px
+}
+.pcontent-mid2 .mid-wrap{
+    overflow: hidden;
+}
+.pcontent-mid2 .mid-box{
+    float: left;
+    width: calc((100% - 54px) / 3);
+
+    margin: 0 27px 31px 0;
+}
+.pcontent-mid2 .mid-box img{
+    width: 232px;
+    display: block;
+}
+.pcontent-mid2 .mid-box .video-box{
+    height: 100%;
+}
+.pcontent-mid2 .mid-box:last-child{
+    margin-right: 0;
+}
+.pcontent-mid2 .mtxt-box{
+    display: block;
+    padding-top: 12px;
+}
+
+.preview-area .funding-area{
+    overflow: hidden;
+}
+.funding-area .Ftitle-area{
+    padding-top: 24px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.funding-area .Ftitle-area .rt-title{
+    float: left;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.funding-area .Ftitle-area .rt-title::after{
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    background-position: -444px -304px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 6px;
+    vertical-align: 0;
+}
+
+.funding-wrap .mid-box{
+    float: left;
+    width: calc((100% - 54px) / 3);
+    margin: 0 27px 31px 0;
+}
+.funding-wrap .mid-box:last-child{
+    margin-right: 0;
+}
+/* .funding-wrap .mid-box .today-funding{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebaa00;
+    z-index: 9;
+} */ /* 얘가 부모인데 왜 안먹는지? */
+.funding-wrap .mid-box .funding-txt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebaa00;
+    z-index: 9;
+}
+.funding-wrap .mtxt-box .percent{
+    color: #ebaa00;
+}
+
+.sc-recipe .more-btnarea{
+    position: relative;
+    padding-top: 18px;
+    margin-bottom: 42px;
+    border-bottom: 1px solid #e4e8eb;
+}
+.sc-recipe .more-btnarea .more-btn{
+    position: absolute;
+    top: 0;
+    left: 334px;
+    background: transparent;
+    color: #505050;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+}
+.more-btnarea .more-btn::before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    background-position: 0 -345px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 3px;
+}
+
+/* //////////RRRR right-area RRRRRR/////////// */
+.right-area{
+    width: 350px;
+    float: right;
+}
+.sc-login{
+    padding: 16px 16px 12px 17px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+}
+.sc-login .login-msg{
+    padding-left: 3px;
+    color: grey;
+}
+.sc-login .link-login{
+    display: block;
+    padding: 15px 0;
+    margin-top: 11px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.sc-login .sub-area{
+    margin: 14px 8px 0 4px;
+}
+.sc-login .sub-area::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.sc-login .sub-area .link-id{float: left;}
+.sc-login .sub-area .link-find{float: left;}
+.sc-login .sub-area .link-join{float: right;}
+
+.sc-cardnews{
+    position: relative;
+    height: 47px;
+    margin: 12px 0;
+    border: 1px solid #dae1e6;
+    letter-spacing: -.25px; /* -0.25px; */
+    padding-right: 67px;
+    /* overflow: hidden; */
+}
+
+.sc-cardnews .link-news{
+    /* background: #f00; */
+    display: block;
+    height: 100%;
+    padding: 14px 0 13px 16px;
+    line-height: 20px;
+}
+.sc-cardnews .link-news .badge{
+    float: left;
+    height: 18px;
+    padding: 0 7px;
+    margin-right: 8px;
+    border: 1px solid #202020;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #202020;
+    font-weight: 700;
+    vertical-align: top;
+}
+.sc-cardnews .link-news .news{float: left;}
+
+.sc-cardnews .navi {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    overflow: hidden;
+}
+
+.sc-cardnews .navi .btn{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e4e8eb;
+}
+.sc-cardnews .navi .btn.prev{
+    margin-right: -1px;
+}
+.sc-cardnews .navi .btn.prev::after{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -408px -66px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+}
+
+.sc-cardnews .navi .btn.next{}
+.sc-cardnews .navi .btn.next::after{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -444px -421px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+}
+
+
+/* 상품영역 */
+.sc-shop{
+    height: 1809px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 17px;
+}
+.sc-shop .shop-header{
+    padding: 12px 0 13px;
+    overflow: hidden;
+}
+.sc-shop .shop-header a{
+    display: block;
+}
+.sc-shop .shop-header .title::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-position: -48px -77px;
+    margin-right: 4px;
+    vertical-align: -3px;
+}
+.sc-shop .shop-header .title{
+    float: left;
+    margin: 0 0 0 1px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.sc-shop .shop-header .title::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -65px -77px;
+    margin-left: 7px;
+}
+.sc-shop .shop-list{
+    float: right;
+    overflow: hidden;
+}
+.sc-shop .shop-list .shop-title:first-child{
+    border-bottom: 2px solid #19ce60;
+    color: #03c75a;
+}
+.sc-shop .shop-list .shop-title{
+    margin-left: 15px;
+    float: left;
+    font-weight: bold;
+}
+
+.sc-shop .shop-body{
+    overflow: hidden;
+    /* height: 1763px; */
+    border: 1px solid #e4e8eb;
+}
+.shop-body .shopping-mall{
+    overflow: hidden;
+    padding: 12px 4px 11px 10px;
+    background-color: #f7f9fa;
+    border-bottom: 1px solid #dae1e6;
+}
+.shop-body .shopping-mall .mall-area{/* 값을 똑같이 줬는데 단어가 밑으로 떨어지는 이유?? */
+    font-size: 12px;
+    line-height: 23px;
+    color: #404040;
+    overflow: hidden;
+    letter-spacing: -.25px;
+}
+.shop-body .mall-area .mall-name{
+    float: left;
+    line-height: 23px;
+    color: #404040;
+    position: relative;
+    /* margin: 0 12px; */
+}
+.shop-body .mall-area .dot{
+    background-color: #c9cccf;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 10px 12px 0;
+}
+/* .shop-body .mall-area .mall-name+.mall-name::before{
+    width: 3px; 안됌....
+    height: 3px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 10px 5px 0;
+    background: #c9cccf;
+    vertical-align: top;
+    border-radius: 50%;
+} */
+
+.shop-body .recommend-area{
+    position: relative;
+    padding: 55px 8px 20px;
+}
+.shop-body .recommend-area .shop-control{
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    text-align: right;
+}
+.shop-body .recommend-area .num-box{
+    float: left;
+    line-height: 29px;
+    color: grey;
+}
+.shop-body .recommend-area .btn-box{
+    overflow: hidden;
+    float: left;
+    margin-left: 7px;
+}
+.shop-body .recommend-area .btn{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+}
+.shop-body .recommend-area .btn::before{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -93px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 9px 12px 9px 10px;
+}
+.shop-body .recommend-area .prev{
+    margin-right: -1px;
+}
+.shop-body .recommend-area .next::before{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -79px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 9px 10px 9px 12px;
+}
+
+.recommend-area .reco-list{
+    overflow: hidden;
+    /* margin-right: -5px; */
+    margin-top: -10px;
+}
+.recommend-area .reco-list .roco-item{
+    float: left;
+    width: calc((100% - 10px) / 3);
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.recommend-area .roco-item a{
+    display: block;
+    width: 100%;
+}
+.recommend-area .roco-item a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recommend-area .roco-item:nth-child(3n){
+    margin-right: 0;
+}
+.recommend-area .roco-item .roco-titlebox{
+    margin-top: 5px;
+}
+.recommend-area .roco-item .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+
+}
+.recommend-area .roco-item .title:first-child{
+    font-weight: 700;
+}
+.recommend-area .shop_page{ /* 가운데 정렬이 안되는 이유 */
+    margin-top: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.recommend-area .shop_page .num-box{
+    display: inline-block;
+    min-width: 61px;
+    line-height: 29px;
+    color: grey;
+    text-align: center;
+    vertical-align: top;
+}
+
+.shop-body .shop-news{
+    margin: 0 8px;
+    padding: 19px 0 17px;
+    border-top: 1px solid #e4e8eb;
+    overflow: hidden;
+}
+.shop-body .shop-news .news-top{
+    position: relative;
+    padding-left: 5px;
+    overflow: hidden;
+}
+.shop-body .shop-news .news-title{
+    line-height: 29px;
+    font-weight: bold;
+}
+.shopmore .news-cb{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.shop-body .shop-news .new-detail{
+    margin: 13px 5px 0;
+    line-height: 28px;
+}
+.shop-body .new-detail .new-box a{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+}
+.shop-body .new-detail .new-box .title{
+    margin-right: 13px;
+    color: #000;
+}
+.shop-body .new-detail .new-box .title::before{
+    background-color: #1ace61;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    content: '';
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+.shop-body .new-detail .dec{
+    display: inline-block;
+}
+
+
+.shopmore {
+    position: relative;
+    margin: 0 8px;
+    border-top: 1px solid #e4e8eb;
+}
+.shopmore .shop-category {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    overflow: hidden;
+}
+.shopmore .shop-category .cate {
+    float: left;
+}
+.shopmore .shop-category .cate:first-child {
+    color: #03c75a;
+    font-weight: bold;
+    border-bottom: 2px solid #19ce60;
+}
+.shopmore .shop-category .cate+.cate {
+    margin-left: 12px;
+}
+.shopmore .shopmore-wrap {
+    padding: 55px 0 19px;
+}
+.shopmore .shopmore-item {
+    margin-right: -5px;
+    overflow: hidden;
+}
+.shopmore .shopmore-goods {
+    float: left;
+    margin-right: 5px;
+}
+.shopmore .shopmore-goods .shopmore-img {
+    width: 163px; height: 163px;
+}
+.shopmore .shopmore-goods .goods-title {
+    display: block;
+    padding-top: 9px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.shop-deal{ /* 밑에가 왜 잘리는지..? */
+    padding-top: 16px;
+    margin: 0 8px;
+    border-top: 1px solid #e4e8eb;
+}
+.shop-deal .shopdeal-title{
+    position: relative;
+}
+.shop-deal .shopdeal-title .title{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.shop-deal .shopdeal-title .deal-link{
+    display: inline-block;
+    vertical-align: top;
+}
+.shop-deal .shopdeal-title .deal-link::before{
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    background-position: 0 -54px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-right: 7px;
+}
+.shopdeal-title .shopdeal-title .shop-control{
+    position: absolute;/* 계속 이전 다음 이미지 안보임 */
+    right: 0;
+    top: 0;
+}
+
+.plusdeal-item{
+    margin-top: 20px;
+}
+
+.plusdeal-item .plusdeal-goods .plusdeal-wrap{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.plusdeal-item .plusdeal-box{
+    float: left;
+    border-radius: 4px;
+    width: 85px;
+    height: 60px;
+}
+.plusdeal-item .plusdeal-box:last-child{
+    width: 60px;
+    margin-left: 10px;
+}
+.plusdeal-item .plusdeal-box .Lpimg{
+    width: 100%;
+    width: 85px;
+    height: 60px;
+    border-radius: inherit;
+}
+.plusdeal-item .plusdeal-box .ico_one_plus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-position: -42px -54px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.plusdeal-item .plus-R{
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+}
+.plusdeal-item .Rpimg{
+    width: 100%;
+}
+.plusdeal-item .plus-R::before{ /* 왜 이미지가 안나올까... */
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -26px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    z-index: 1;
+}
+
+.plusdeal-item .plusdeal-dsc{}
+.plusdeal-item .plusdeal-dsc .title{
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 34px;
+    line-height: 17px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    line-height: 17px;
+}
+.plusdeal-item .plusdeal-dsc .discount{
+    color: #f04045;
+}
+.plusdeal-item .plusdeal-dsc .price{
+    font-weight: bold;
+}
+
+
+.plusdeal-item .plusdeal-goods+.plusdeal-goods{
+    margin-top: 15px;
+}
