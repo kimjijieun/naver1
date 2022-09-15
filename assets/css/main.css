@@ -304,18 +304,28 @@
 .sc-recipe .preview-area .content-box:last-child{
     float: right;
 }
-.sc-recipe .preview-area .video-box{
-    /* overflow: hidden; */
+.sc-recipe .funding-area .video-box{
+    overflow: hidden;
     display: block;
     position: relative;
-    width: 100%;
-    height: 180px;
+    /* width: 100%;
+    height: 180px; */
+    width: 232px;
+    height: 130px;
+}
+
+.sc-recipe .content-box:hover .title-txt {
+    text-decoration: underline;
+}
+.sc-recipe .content-box:hover img {
+    transform: scale(1.1);
 }
 
 .sc-recipe .preview-area img{ /* 왜 이미지를 바로 안쓰고 부모로 감싸는지 */
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s;
 }
 .sc-recipe .preview-area .ico-play{
     position: absolute;
@@ -394,15 +404,21 @@
     position: relative;
     
 }
-.pcontent-mid .recipe-item img{
+.pcontent-mid .recipe-item .rec-img{
     float: left;
     width: 170px;
     height: 114px;
     margin-right: 21px;
     display: block;
 }
+.pcontent-mid .recipe-item .rec-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .pcontent-mid .recipe-item .rec-box{
     /* float: right; */ /* 플룻을 주면 오른쪽이 아니라 밑으로 떨어지는 이유는? */
+    overflow: hidden;
     padding: 4px 47px 0 0;
 }
 .preview-area .source{
@@ -466,7 +482,8 @@
     overflow: hidden;
 }
 .funding-area .Ftitle-area{
-    padding-top: 24px;
+    /* padding-top: 24px; */
+    padding: 18px 0 17px;
     line-height: 25px;
     overflow: hidden;
 }
@@ -518,6 +535,9 @@
     left: 0;
     background-color: #ebaa00;
     z-index: 9;
+}
+.funding-wrap .mtxt-box{
+    display: block;
 }
 .funding-wrap .mtxt-box .percent{
     color: #ebaa00;

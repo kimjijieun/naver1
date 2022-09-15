@@ -126,6 +126,7 @@
 
 .header-area .gnb-area .weather-area{
     float: right;
+    line-height: 52px;
 }
 
 
@@ -170,7 +171,8 @@
 }
 .footer-banner .banner-item{
     float: left;
-    width: 350px;
+    /* width: 350px; */
+    width: calc(100% / 3);
     height: 86px;
 }
 .footer-banner .banner-item a{
