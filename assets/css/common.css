@@ -65,7 +65,9 @@ body{
 .shop-body .news-top .next::before,
 .shop-deal .shopdeal-title .deal-link::before,
 .plusdeal-item .plusdeal-box .ico_one_plus,
-.plusdeal-item .plus-R::before
+.plusdeal-item .plus-R::before,
+.sc-shop .btn.prev::before,
+.shop-body .btn.next .next::before
 {
     background-image: url(../images/sp_shop_a620bd.png);
     background-repeat: no-repeat;
