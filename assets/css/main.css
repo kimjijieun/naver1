@@ -790,51 +790,22 @@
     position: relative;
     padding: 55px 8px 20px;
 }
-.shop-body .recommend-area .shop-control{
+.sc-shop .shop-control{
     position: absolute;
     top: 13px;
     right: 8px;
     text-align: right;
 }
-.shop-body .recommend-area .num-box{
+.sc-shop .shop-control .num-box{
     float: left;
     line-height: 29px;
     color: grey;
 }
-.shop-body .recommend-area .btn-box{
+.sc-shop .shop-control .btn-box{
     overflow: hidden;
     float: left;
     margin-left: 7px;
 }
-.shop-body .recommend-area .btn{
-    float: left;
-    background-color: #fff;
-    border: 1px solid #dae1e6;
-}
-/* .shop-body .recommend-area .btn::before{
-    display: inline-block;
-    width: 5px;
-    height: 9px;
-    background-position: -93px -77px;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    content: '';
-    margin: 9px 12px 9px 10px;
-} */
-.shop-body .recommend-area .prev{
-    margin-right: -1px;
-}
-/* .shop-body .recommend-area .next::before{
-    display: inline-block;
-    width: 5px;
-    height: 9px;
-    background-position: -79px -77px;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    content: '';
-    margin: 9px 10px 9px 12px;
-} */
-
 
 .sc-shop .btn{
     display: inline-block;
@@ -852,7 +823,7 @@
     content: '';
     margin: 9px 12px 9px 10px;
 }
-.shop-body .btn.next .next::before{
+.shop-body .btn.next::before{
     display: inline-block;
     width: 5px;
     height: 9px;
@@ -862,6 +833,21 @@
     content: '';
     margin: 9px 10px 9px 12px;
 }
+
+.sc-shop .btn-box .btn.prev{
+    overflow: hidden;
+    float: left;
+    margin-left: 7px;
+}
+.sc-shop .btn-box .btn.next{
+    float: left;
+    margin-left: -1px;
+}
+
+
+
+
+
 
 
 .recommend-area .reco-list{
@@ -904,6 +890,11 @@
 .recommend-area .roco-item .title:first-child{
     font-weight: 700;
 }
+
+
+
+
+
 .recommend-area .shop_page{ /* 가운데 정렬이 안되는 이유 */
     margin-top: 18px;
     text-align: center;
@@ -934,7 +925,7 @@
     line-height: 29px;
     font-weight: bold;
 }
-.shopmore .news-cb{
+.shop-body .news-top .news-cb{
     position: absolute;
     top: 0;
     right: 0;
@@ -992,6 +983,7 @@
 .shopmore .shop-category .cate+.cate {
     margin-left: 12px;
 }
+.sc-shop .shopmore .shop-control.news-cb{right: 0;}
 .shopmore .shopmore-wrap {
     padding: 55px 0 19px;
 }
@@ -1013,8 +1005,8 @@
     text-align: center;
 }
 
-.shop-deal{ /* 밑에가 왜 잘리는지..? */
-    padding-top: 16px;
+.shop-deal{ /* 밑에가 왜 잘리는지..?해결 */
+    padding: 16px 0 16px;
     margin: 0 8px;
     border-top: 1px solid #e4e8eb;
 }
@@ -1040,11 +1032,7 @@
     content: '';
     margin-right: 7px;
 }
-.shopdeal-title .shopdeal-title .shop-control{
-    position: absolute;/* 계속 이전 다음 이미지 안보임 */
-    right: 0;
-    top: 0;
-}
+.sc-shop .shop-deal .shop-control.news-cb{top: -3px;}
 
 .plusdeal-item{
     margin-top: 20px;
@@ -1060,6 +1048,7 @@
     border-radius: 4px;
     width: 85px;
     height: 60px;
+    position: relative;
 }
 .plusdeal-item .plusdeal-box:last-child{
     width: 60px;
