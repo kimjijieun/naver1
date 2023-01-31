@@ -110,6 +110,13 @@
     line-height: 30px;
     font-size: 15px;
     font-weight: bold;
+    color: #19ce60;
+    float: left;
+}
+.header-area .gnb-list:last-child{
+    float: left;
+    margin-left: 11px;
+    color: #000;
 }
 .header-area .gnb-list::after{
     content: '';
@@ -118,10 +125,25 @@
 }
 .header-area .gnb-item{
     float: left;
-    color: #19ce60;
+    /* color: #19ce60; */
 }
 .header-area .gnb-item+.gnb-item{
     margin-left: 12px;
+}
+.header-area .gnb-area .btn-more{
+    margin-left: 17px;
+    font-size: 13px;
+    color: #202020;
+    text-align: right;
+}
+.header-area .gnb-area .btn-more::after{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 7px;
+    background-position: -443px -330px;
+    margin-left: 7px;
+    vertical-align: 2px;
 }
 
 .header-area .gnb-area .weather-area{

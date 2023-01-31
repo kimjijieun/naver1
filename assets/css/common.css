@@ -50,7 +50,11 @@ body{
 .sc-recipe .preview-area .ico-play,
 .funding-area .Ftitle-area .rt-title::after,
 .more-btnarea .more-btn::before,
-.footer-inner .notice-area .service::after{
+.footer-inner .notice-area .service::after,
+.header-area .gnb-area .btn-more::after,
+.sc-news .group-title .link-title::before,
+.sc-news .group-title .link-title::after
+{
     background-image: url(../images/sp_main_dba1af.png);
     background-repeat: no-repeat;
     background-size: 457px;

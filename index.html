@@ -14,7 +14,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NAVER</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/img/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> 
+
     <link rel="stylesheet" href="./assets/css/layout.css">
     <!-- 메인페이지일때 -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -25,7 +45,7 @@
             <div class="inner"> <!-- w잡고 중앙정렬 공통 -->
                 <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
                 <div class="search-area">
-                    <form action="" method="get"><!-- 보안이 노필요get, 필요 post -->
+                    <form method="get"><!-- 보안이 노필요get, 필요 post -->
                         <fieldset>
                             <legend class="blind">검색</legend>
                             <input type="text">
@@ -48,11 +68,23 @@
                 <nav class="gnb-wrap">
                     <ul class="gnb-list">
                         <li class="gnb-item"><a href="">메일</a></li>
-                        <li class="gnb-item"><a href="">메일</a></li>
-                        <li class="gnb-item"><a href="">메일</a></li>
-                        <li class="gnb-item"><a href="">메일</a></li>
-                        <li class="gnb-item"><a href="">메일</a></li>
+                        <li class="gnb-item"><a href="">카페</a></li>
+                        <li class="gnb-item"><a href="">블로그</a></li>
+                        <li class="gnb-item"><a href="">지식IN</a></li>
+                        <li class="gnb-item"><a href="">쇼핑</a></li>
+                        <li class="gnb-item"><a href="">Pay</a></li>
+                        <li class="gnb-item"><a href="">TV</a></li>
                     </ul>
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">사전</a></li>
+                        <li class="gnb-item"><a href="">증권</a></li>
+                        <li class="gnb-item"><a href="">부동산</a></li>
+                        <li class="gnb-item"><a href="">지도</a></li>
+                        <li class="gnb-item"><a href="">VIBE</a></li>
+                        <li class="gnb-item"><a href="">도서</a></li>
+                        <li class="gnb-item"><a href="">웹툰</a></li>
+                    </ul>
+                    <a href="" class="btn-more">더보기</a>
                 </nav>
                 <div class="weather-area">
                     날씨영역
@@ -901,8 +933,7 @@
                                         <div class="shopmore-thumb img-bd">
                                             <img src="./assets/images/rad01.jpg" alt="" class="shopmore-img">
                                         </div>
-                                        <div href="" class="goods-title"><strong class="title">시원하고 쾌적한 조거팬츠</strong>
-                                        </div>
+                                        <p class="goods-title"><strong class="title">시원하고 쾌적한 조거팬츠</strong></p>
                                     </a>
                                 </li>
                                 <li class="shopmore-goods">
@@ -910,8 +941,7 @@
                                         <div class="shopmore-thumb img-bd">
                                             <img src="./assets/images/rad01.jpg" alt="" class="shopmore-img">
                                         </div>
-                                        <div href="" class="goods-title"><strong class="title">특별한그녀사랑스런 패션</strong>
-                                        </div>
+                                        <p class="goods-title"><strong class="title">특별한그녀사랑스런 패션</strong></p>
                                     </a>
                                 </li>
                             </ul>
@@ -1060,25 +1090,25 @@
                 <div class="aside-left">
                     <div class="aside-list">
                         <h3 class="title">Creators</h3>
-                        <a href=""class="aside-link">크리에이터</a>
-                        <a href=""class="aside-link">스몰비즈니스</a>
+                        <a href="" class="aside-link">크리에이터</a>
+                        <a href="" class="aside-link">스몰비즈니스</a>
                     </div>
                     <div class="aside-list">
                         <h3 class="title">PartnersSME</h3>
-                        <a href=""class="aside-link">SME 풀케어 시스템</a>
-                        <a href=""class="aside-link">비즈니스 · 광고</a>
-                        <a href=""class="aside-link">스토어 개설</a>
-                        <a href=""class="aside-link">지역업체 등록</a>
-                        <a href=""class="aside-link">엑스퍼트 등록</a>
+                        <a href="" class="aside-link">SME 풀케어 시스템</a>
+                        <a href="" class="aside-link">비즈니스 · 광고</a>
+                        <a href="" class="aside-link">스토어 개설</a>
+                        <a href="" class="aside-link">지역업체 등록</a>
+                        <a href="" class="aside-link">엑스퍼트 등록</a>
                     </div>
                     <div class="aside-list">
                         <h3 class="title">Developers</h3>
-                        <a href=""class="aside-link">네이버 개발자 센터오픈</a>
-                        <a href=""class="aside-link">PIA</a>
-                        <a href=""class="aside-link">오픈소스</a>
-                        <a href=""class="aside-link">네이버 D2</a>
-                        <a href=""class="aside-link">네이버 D2SF</a>
-                        <a href=""class="aside-link">네이버 랩스</a>
+                        <a href="" class="aside-link">네이버 개발자 센터오픈</a>
+                        <a href="" class="aside-link">PIA</a>
+                        <a href="" class="aside-link">오픈소스</a>
+                        <a href="" class="aside-link">네이버 D2</a>
+                        <a href="" class="aside-link">네이버 D2SF</a>
+                        <a href="" class="aside-link">네이버 랩스</a>
                     </div>
                 </div>
 
