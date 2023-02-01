@@ -113,7 +113,7 @@
     color: #19ce60;
     float: left;
 }
-.header-area .gnb-list:last-child{
+.header-area .gnb-list:nth-child(2){
     float: left;
     margin-left: 11px;
     color: #000;
@@ -135,6 +135,7 @@
     font-size: 13px;
     color: #202020;
     text-align: right;
+    line-height: 51px;
 }
 .header-area .gnb-area .btn-more::after{
     content: '';
