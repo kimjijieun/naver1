@@ -42,6 +42,9 @@ body{
 .header-area .logo,
 .header-area .search-area button::after,
 .header-area .service-area a.link-start:after,
+.header-area .link-junior::after,
+.header-area .link-bin::after,
+.header-area .weather-area .degree-box .min::after,
 .sc-news .group-title .set-area .btn-set::after,
 .sc-cardnews .navi .btn::after,
 .sc-recipe .info-area .my-set::before,
@@ -74,4 +77,9 @@ body{
     background-image: url(../images/sp_shop_a620bd.png);
     background-repeat: no-repeat;
     background-size: 107px 101px;
+}
+.header-area .weather-area .weather-icon::before{
+    background-image: url(../images/is-weather.png);
+    background-repeat: no-repeat;
+    background-size: 215px;
 }
