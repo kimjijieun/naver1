@@ -36,6 +36,7 @@
 .sc-news .group-issue .link-media{
     float: left;
     font-weight: bold;
+    margin-right: 5px;
 }
 .sc-news .group-issue .link-issue{
     float: left;
@@ -93,6 +94,7 @@
     vertical-align: top;
     content: '';
     margin-left: 6px;
+    margin-right: 6px;
     vertical-align: -1px;
 }
 .sc-news .group-title .sort-area{float: left;}
@@ -177,10 +179,12 @@
     background: #dae1e6;
 }
 
-.sc-news .group-list .hr-line.hr01{top: 65px;}
-.sc-news .group-list .hr-line.hr02{top: 130px;}
-.sc-news .group-list .hr-line.hr03{top: 196px;}
+.sc-news .group-list .hr-line.hr01{top: calc(65px*1);}
+.sc-news .group-list .hr-line.hr02{top: calc(65px*2);}
+.sc-news .group-list .hr-line.hr03{top: calc(65px*3);}
 
+.sc-news .prev{left: -20px;}
+.sc-news .next{right: -20px;}
 
 /* @@@@@레시피 영역@@@@@@ */
 
@@ -249,14 +253,13 @@
     position: relative;
     background-color: #fff;
 }
-.sc-recipe .mcate-prev{
+.btn{
     position: absolute;
     top: 50%;
-    /* left: 50%; */ /* transform left값을 안줬는데 -50%가 먹은 이유는? */
-    transform: translate(-50%, -50%);/* 여긴 왜 -50%여야 되는건지 */
+    transform: translateY(-50%);
     z-index: 9;
 }
-.sc-recipe .mcate-prev .ico-btn{
+.prev .ico-btn{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -264,15 +267,14 @@
     background-repeat: no-repeat;
     vertical-align: top;
 }
-
-.sc-recipe .mcate-next{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);/* 여긴 왜 50%여야 되는건지 */
-    z-index: 9;
+    
+.sc-recipe .prev{
+    left: -23px;
 }
-.sc-recipe .mcate-next .ico-btn{
+.sc-recipe .next{
+    right: -18px;
+}
+.next .ico-btn{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -454,9 +456,11 @@
     object-fit: cover;
 }
 .pcontent-mid .recipe-item .rec-box{
-    /* float: right; */ /* 플룻을 주면 오른쪽이 아니라 밑으로 떨어지는 이유는? */
     overflow: hidden;
     padding: 4px 47px 0 0;
+}
+.pcontent-mid .recipe-item:hover .title-txt{
+    text-decoration: underline;
 }
 .preview-area .source{
     display: inline-block;
@@ -510,6 +514,9 @@
 .pcontent-mid2 .mid-box:last-child{
     margin-right: 0;
 }
+.pcontent-mid2 .mid-box:hover .title-txt{
+    text-decoration: underline;
+}
 .pcontent-mid2 .mtxt-box{
     display: block;
     padding-top: 12px;
@@ -550,13 +557,6 @@
 .funding-wrap .mid-box:last-child{
     margin-right: 0;
 }
-/* .funding-wrap .mid-box .today-funding{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ebaa00;
-    z-index: 9;
-} */ /* 얘가 부모인데 왜 안먹는지? */
 .funding-wrap .mid-box .funding-txt{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -572,6 +572,9 @@
     left: 0;
     background-color: #ebaa00;
     z-index: 9;
+}
+.funding-wrap .mid-box:hover .title-txt{
+    text-decoration: underline;
 }
 .funding-wrap .mtxt-box{
     display: block;
@@ -634,6 +637,16 @@
     text-align: center;
     text-decoration: none;
 }
+.sc-login .link-login::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 12px;
+    background-position: -138px -330px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 2px 5px 0 0;
+}
 .sc-login .sub-area{
     margin: 14px 8px 0 4px;
 }
@@ -645,6 +658,36 @@
 .sc-login .sub-area .link-id{float: left;}
 .sc-login .sub-area .link-find{float: left;}
 .sc-login .sub-area .link-join{float: right;}
+.sc-login .sub-area .link-id::before{
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background-position: -444px -98px;
+    vertical-align: top;
+    content: '';
+    margin: -1px 4px 1px;
+}
+.sc-login .sub-area .link-find::before{
+    content: '';
+    background-color: #d7dce0;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 0 5px 0 5px;
+    vertical-align: 3px;
+}
+.sc-login .sub-area .link-join::before{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-position: -444px -129px;
+    vertical-align: top;
+    margin: 2px 5px 0 0;
+}
 
 .sc-cardnews{
     position: relative;
@@ -662,6 +705,10 @@
     height: 100%;
     padding: 14px 0 13px 16px;
     line-height: 20px;
+    box-sizing: border-box;
+}
+.sc-cardnews .link-news:hover .news{
+    text-decoration: underline;
 }
 .sc-cardnews .link-news .badge{
     float: left;
@@ -690,6 +737,8 @@
     float: left;
     background-color: #fff;
     border: 1px solid #e4e8eb;
+    position: initial;
+    transform: translateY(0);
 }
 .sc-cardnews .navi .btn.prev{
     margin-right: -1px;
@@ -793,6 +842,9 @@
 .shop-body .mall-area .mall-name{
     float: left;
 }
+.shop-body .mall-area .mall-name:hover{
+    text-decoration: underline;
+}
 .shop-body .mall-area .dot{
     float: left;
     background-color: #c9cccf;
@@ -835,19 +887,24 @@
     line-height: 29px;
     color: grey;
 }
+.sc-shop .shop-control .current{
+    margin-right: 4px;
+    color: #202020;
+    font-weight: 700;
+}
 .sc-shop .shop-control .btn-box{
     overflow: hidden;
     float: left;
     margin-left: 7px;
 }
 
-.sc-shop .btn{
+.sc-shop .btn1{
     display: inline-block;
     background-color: #fff;
     border: 1px solid #dae1e6;
     vertical-align: top;
 }
-.sc-shop .btn.prev::before{
+.sc-shop .btn1.prev::before{
     display: inline-block;
     width: 5px;
     height: 9px;
@@ -857,7 +914,7 @@
     content: '';
     margin: 9px 12px 9px 10px;
 }
-.shop-body .btn.next::before{
+.shop-body .btn1.next::before{
     display: inline-block;
     width: 5px;
     height: 9px;
@@ -868,12 +925,12 @@
     margin: 9px 10px 9px 12px;
 }
 
-.sc-shop .btn-box .btn.prev{
+.sc-shop .btn-box .btn1.prev{
     overflow: hidden;
     float: left;
     margin-left: 7px;
 }
-.sc-shop .btn-box .btn.next{
+.sc-shop .btn-box .btn1.next{
     float: left;
     margin-left: -1px;
 }
@@ -899,6 +956,9 @@
     display: block;
     width: 100%;
 }
+.recommend-area .roco-item a:hover .title:first-child{
+    text-decoration: underline;
+}
 .recommend-area .roco-item a img{
     display: block;
     width: 100%;
@@ -910,6 +970,7 @@
 }
 .recommend-area .roco-item .roco-titlebox{
     margin-top: 5px;
+    text-align: center;
 }
 .recommend-area .roco-item .title{
     overflow: hidden;
@@ -919,10 +980,12 @@
     line-height: 16px;
     text-align: center;
     font-size: 12px;
-
+    font-weight: bold;
 }
-.recommend-area .roco-item .title:first-child{
-    font-weight: 700;
+.recommend-area .roco-item span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -942,6 +1005,11 @@
     color: grey;
     text-align: center;
     vertical-align: top;
+}
+.recommend-area .shop_page .current{
+    margin-right: 4px;
+    color: #202020;
+    font-weight: 700;
 }
 
 .shop-body .shop-news{
@@ -976,9 +1044,13 @@
     display: block;
     width: 100%;
 }
+.shop-body .new-detail .new-box a:hover{
+    text-decoration: underline;
+}
 .shop-body .new-detail .new-box .title{
     margin-right: 13px;
     color: #000;
+    font-weight: bold;
 }
 .shop-body .new-detail .new-box .title::before{
     background-color: #1ace61;
@@ -991,7 +1063,7 @@
     vertical-align: 2px;
 }
 .shop-body .new-detail .dec{
-    display: inline-block;
+    white-space: nowrap;
 }
 
 
@@ -1037,6 +1109,12 @@
     padding-top: 9px;
     font-size: 12px;
     text-align: center;
+}
+.shopmore .shopmore-goods .goods-title .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .shop-deal{
