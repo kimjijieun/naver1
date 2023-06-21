@@ -1,9 +1,5 @@
 @import './reset.css';
 @import './common.css';
-/* 다른애들 딸려와라 */
-
-/* 헤더+푸터 놓는곳 모든 사이트에서 적용됨 */
-
 .header-area .logo-area{
     border-bottom: 1px solid #e4e8eb;
 }
@@ -26,7 +22,6 @@
 }
 
 .header-area .search-area{
-    /* position: relative; */
     width: 582px;
     height: 52px;
     border: 2px solid #19ce60;
@@ -49,7 +44,7 @@
     line-height: 24px;
     color: #000;
     font-weight: 700;
-    outline: 0; /* 체크할때 나오는 선 없애는거 */
+    outline: 0;
 }
 
 .header-area .search-area button{
@@ -79,7 +74,6 @@
     content: '';
     display: inline-block;
     width: 26px;height: 26px;
-    /* background: #f00; */
     vertical-align: top;
     margin: -3px 0 0 3px;
     background-position: -308px -345px;
@@ -112,7 +106,6 @@
 }
 
 
-/* //////// */
 
 .header-area .gnb-area{
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
@@ -146,7 +139,6 @@
 }
 .header-area .gnb-item{
     float: left;
-    /* color: #19ce60; */
 }
 .header-area .gnb-item+.gnb-item{
     margin-left: 12px;
@@ -255,10 +247,9 @@
     background-color: #fafbfc;
     border-top: 1px solid #e4e8eb;
 }
-/* 큰틀을 구성하는 영역이라면 overflow보단 :after 처리하는게 이득 */
+
 .footer-area:after{
-    /* 가상의 요소 */
-    content: ''; /* display: inline; */
+    content: '';
     display: block;
     clear: both;
 }
@@ -272,9 +263,11 @@
 }
 .footer-banner .banner-item{
     float: left;
-    /* width: 350px; */
     width: calc(100% / 3);
     height: 86px;
+}
+.footer-banner .banner-item:hover .sub-title{
+    text-decoration: underline;
 }
 .footer-banner .banner-item a{
     display: block;
@@ -286,7 +279,6 @@
     height: 86px;
 }
 .footer-banner .banner-txt{
-    /* float: right; */ /* 얘도 왜 플롯이 안먹는지 */
     overflow: hidden;
     height: 86px;
     padding: 2px 2px 0 16px;
@@ -372,6 +364,9 @@
     float: left;
     color: #777;
 }
+.footer-inner .aside-area .aside-link:hover{
+    text-decoration: underline;
+}
 .footer-inner .aside-area .aside-link+.aside-link::before{
     content: "";
     display: inline-block;
@@ -427,6 +422,9 @@
 }
 .footer-inner .corp-area .corp-item{
     float: left;
+}
+.footer-inner .corp-area .corp-item:hover{
+    text-decoration: underline;
 }
 .footer-inner .corp-area .corp-item+.corp-item::before{
     content: "";

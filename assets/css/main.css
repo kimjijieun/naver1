@@ -1101,6 +1101,9 @@
     float: left;
     margin-right: 5px;
 }
+.shopmore .shopmore-goods:hover .title{
+    text-decoration: underline;
+}
 .shopmore .shopmore-goods .shopmore-img {
     width: 163px; height: 163px;
 }
@@ -1155,6 +1158,9 @@
     width: 100%;
     overflow: hidden;
 }
+.plusdeal-item .plusdeal-goods .plusdeal-wrap:hover .plusdeal-dsc{
+    text-decoration: underline;
+}
 .plusdeal-item .plusdeal-box{
     float: left;
     border-radius: 4px;
@@ -1207,7 +1213,7 @@
     z-index: 1;
 }
 
-.plusdeal-item .plusdeal-dsc{}
+.plusdeal-item .plusdeal-dsc{overflow: hidden;}
 .plusdeal-item .plusdeal-dsc .title{
     display: -webkit-box;
     overflow: hidden;
